@@ -1,11 +1,16 @@
 @import "../SCSS/variables";
 
+@import "base/base";
 @import "base/reset";
 @import "base/tipografia";
 
 
 @import "layouts/header";
 @import "layouts/footer";
+
+html{
+    height: 100%;
+}
 
 body {
     background: #0f0c29;
@@ -15,6 +20,7 @@ body {
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: relative;
-    padding-bottom: 1000px;
-    border: solid 2px red;
+    padding-bottom: 500px;
+    min-height: 100vh;
+    padding-bottom: 800px;
 }

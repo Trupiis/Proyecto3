@@ -1,0 +1,58 @@
+.info {
+    .foto img {
+        height: 400px;
+        border-radius: 400px;
+        margin-left: 10px;
+    }
+
+    .datos {
+        color: $text-color;
+        font-size: 20px;
+        list-style: none;
+        text-align: start;
+        line-height: 100px;
+        margin-top: 50px;
+        padding: 0;
+        display: inline-block;
+        justify-content: center !important;
+        color: $text-color;
+    }
+
+    .container {
+        margin-top: 100px;
+    }
+}
+
+.CV {
+    margin-top: 200px;
+    text-align: center;
+    h2 {
+        color: $text-color;
+        margin-top: 100px;
+        font-size: $h2-fontsize;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .card{
+        margin-top: 50px;
+        width: 680px;
+        height: 1280px;
+        background-color: gray;
+        display: inline-block;
+        box-shadow: $shadow;
+
+        img{
+            width: 600px;
+            height: 1200px;
+            display: block;
+            border-radius: 10px;
+            margin: 40px auto;
+            box-shadow: $shadow;
+        }
+    }
+    
+
+}

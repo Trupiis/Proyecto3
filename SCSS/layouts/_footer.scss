@@ -2,6 +2,7 @@ footer {
     position: absolute !important;
     bottom: 0 !important;
     width: 100%;
+    background-color: $color1 !important;
     .container-fluid .redes .lista-redes {
         display: flex;
         justify-content: center;
@@ -9,6 +10,9 @@ footer {
     }
     a {
         margin-right: 20px;
+    }
+    h4, hr, p, li{
+        color: $text-color;
     }
 }
 

@@ -129,10 +129,6 @@ nav .navbar-brand {
   color: #fff !important;
 }
 
-.navbar .navbar-toggler-icon span {
-  color: aqua !important;
-}
-
 .navbar-expand-lg {
   background-color: rgba(72, 4, 75, 0.404);
   height: 80px;
@@ -168,26 +164,38 @@ footer h4, footer hr, footer p, footer li {
   color: #fff !important;
 }
 
-form {
-  background-color: rgba(72, 4, 75, 0.404);
-  margin: 20px;
+@media (min-width: 768px) {
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+  form {
+    width: 678px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+}
+.form-container form {
+  margin: 50px;
   border-radius: 10px;
   box-shadow: 0 0 20px black;
 }
-form .labels {
+.form-container form .labels {
   padding: 20px;
 }
-form label {
+.form-container form label {
   color: #fff;
+  margin-bottom: 30px;
 }
-form input {
+.form-container form input {
   color: #fff !important;
   outline: none !important;
   background: inherit !important;
   border: none !important;
   border-bottom: 1px solid red !important;
 }
-form textarea {
+.form-container form textarea {
   color: #fff !important;
   outline: none !important;
   background: inherit !important;
@@ -195,20 +203,39 @@ form textarea {
   border-bottom: 1px solid red !important;
   resize: none;
 }
-form #name::-moz-placeholder {
+.form-container form button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+.form-container form #name::-moz-placeholder {
   color: #fff;
 }
-form #name::placeholder {
+.form-container form #name::placeholder {
   color: #fff;
+}
+.form-container form #phone::-moz-placeholder {
+  color: #fff;
+}
+.form-container form #phone::placeholder {
+  color: #fff;
+}
+.form-container form #email::-moz-placeholder {
+  color: #fff;
+}
+.form-container form #email::placeholder {
+  color: #fff;
+}
+.form-container form #mensaje::-moz-placeholder {
+  color: #fff;
+  bottom: 0;
+}
+.form-container form #mensaje::placeholder {
+  color: #fff;
+  bottom: 0;
 }
 
-@media (min-width: 1024px) {
-  form {
-    width: 600px;
-    display: block;
-    justify-content: center;
-  }
-}
 html {
   height: 100%;
 }

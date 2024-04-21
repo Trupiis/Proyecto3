@@ -21,7 +21,7 @@
             <!-- Desplegable -->
             <button class="navbar-toggler Shadow-none border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
             </button>
             <!-- barra lateral -->
             <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
@@ -30,7 +30,9 @@
                 <!-- Barra lateral header -->
                 <div class="offcanvas-header text-white border-bottom">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LogoX</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-x fa-xl" style="color: #ffffff;"></i>
+                    </button>
                 </div>
                 <div class="off offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -43,7 +45,7 @@
                         </li>
                         <hr>
                         <li class="nav-item">
-                            <a class="nav-link text-white text-center" href="./habilidades .html">Habilidades</a>
+                            <a class="nav-link text-white text-center" href="./habilidades.html">Habilidades</a>
                         </li>
                         <hr>
                         <li class="nav-item">
@@ -67,27 +69,30 @@
     <!-- FORM CIERRA -->
 
     <!-- Form -->
-    <form action="#">
+    <div class="form-container">
+        <form action="#">
         <div class="labels mb-2">
             <label for="name" class="form-label">Nombre completo:</label>
             <input type="text" class="form-control" name="name" placeholder="Ingresar nombre" id="name">
         </div>
         <div class="labels mb-2">
             <label for="number" class="form-label">Número de télefono:</label>
-            <input type="number" class="form-control" name="number" placeholder="Ingresar número" id="name">
+            <input type="number" class="form-control" name="number" placeholder="Ingresar número" id="phone">
         </div>
         <div class="labels mb-2">
             <label for="email" class="form-label">Correo electrónico:</label>
-            <input type="email" class="form-control" name="email" placeholder="Ingresar correo electrónico" id="name">
+            <input type="email" class="form-control" name="email" placeholder="Ingresar correo electrónico" id="email">
         </div>
         <div class="labels mb-2">
             <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
-            <textarea class="form-control" id="mensaje" rows="3" placeholder="Ingresar mensaje"></textarea>
+            <textarea class="form-control" id="mensaje" rows="2" placeholder="Ingresar mensaje"></textarea>
         </div>
         <div class="d-grid">
             <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
     </form>
+    </div>
+    
 
 
     <footer class=" text-dark pt-1 pb-1">

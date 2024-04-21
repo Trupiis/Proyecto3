@@ -4,41 +4,67 @@
     }
 }
 
-form{
-    background-color: $color1;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: $shadow;
-    .labels{
-        padding: 20px;
+@media (min-width:768px) {
+    .form-container{
+        display: flex;
+        justify-content: center;
     }
-    label{
-        color: $text-color;
-    }
-    input{
-        color: $text-color !important;
-        outline: none !important;
-        background: inherit !important;
-        border: none !important;
-        border-bottom: 1px solid red !important;
-    }
-    textarea{
-        color: $text-color !important;
-        outline: none !important;
-        background: inherit !important;
-        border: none !important;
-        border-bottom: 1px solid red !important;
-        resize: none;
-    }
-    #name::placeholder{
-        color: $text-color;
+    form{
+        width: 678px;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 10px;
+        }
+}
+
+.form-container{
+    form{
+        margin: 50px;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        .labels{
+            padding: 20px;
+        }
+        label{
+            color: $text-color;
+            margin-bottom: 30px;
+        }
+        input{
+            color: $text-color !important;
+            outline: none !important;
+            background: inherit !important;
+            border: none !important;
+            border-bottom: 1px solid red !important;
+        }
+        textarea{
+            color: $text-color !important;
+            outline: none !important;
+            background: inherit !important;
+            border: none !important;
+            border-bottom: 1px solid red !important;
+            resize: none;
+        }
+        button{
+            margin-top:20px;
+            margin-bottom:20px;
+            margin-left:20px !important;
+            margin-right:20px !important;
+        }
+        #name::placeholder{
+            color: $text-color;
+            
+        }
+        #phone::placeholder{
+            color: $text-color;
+        }
+        #email::placeholder{
+            color: $text-color;
+        }
+        #mensaje::placeholder{
+            color: $text-color;
+            bottom: 0;
+        }
     }
 }
 
-@media (min-width:1024px) {
-    form{
-        width: 600px;
-        display: block;
-        justify-content: center;
-    }
-}
+

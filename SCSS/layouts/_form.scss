@@ -1,0 +1,44 @@
+.container{
+    h2{
+        color: $text-color !important;
+    }
+}
+
+form{
+    background-color: $color1;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: $shadow;
+    .labels{
+        padding: 20px;
+    }
+    label{
+        color: $text-color;
+    }
+    input{
+        color: $text-color !important;
+        outline: none !important;
+        background: inherit !important;
+        border: none !important;
+        border-bottom: 1px solid red !important;
+    }
+    textarea{
+        color: $text-color !important;
+        outline: none !important;
+        background: inherit !important;
+        border: none !important;
+        border-bottom: 1px solid red !important;
+        resize: none;
+    }
+    #name::placeholder{
+        color: $text-color;
+    }
+}
+
+@media (min-width:1024px) {
+    form{
+        width: 600px;
+        display: block;
+        justify-content: center;
+    }
+}

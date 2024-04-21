@@ -13,31 +13,63 @@
 </head>
 
 <body>
-    <header>
-        <a href="#" class="logo">LogoX</a>
-        <div class="nav">
-            <i class='bx bx-menu' style='color:#fff'></i>
-        </div>
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-trasparent p-0">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">Logo X</a>
+            <!-- Desplegable -->
+            <button class="navbar-toggler Shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- barra lateral -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
 
-        <nav class="navbar">
-            <a href="../index.html" class="nav-link">Inicio</a>
-            <a href="./sobre-mi.html" class="nav-link">Sobre Mi</a>
-            <a href="#" class="nav-link">Habilidades</a>
-            <a href="./proyectos.html" class="nav-link">Proyectos</a>
-            <a href="./contacto.html" class="nav-link">Contacto</a>
-        </nav>
-    </header>
+                <!-- Barra lateral header -->
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LogoX</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="off offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white text-center" aria-current="page" href="../index.html"">Inicio</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="#">Sobre mi</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="#">Habilidades</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="#">Proyectos</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="./contacto.html">Contacto</a>
+                        </li>
+                        <hr>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
     <main>
         <section class="habilidades">
             <h2>HABILIDADES</h2>
         </section>
         <div class="galeria">
-            <img src="../img/bibliotecom.png" alt="">
-            <img src="../img/bibliotecom.png" alt="">
-            <img src="../img/bibliotecom.png" alt="">
-            <img src="../img/bibliotecom.png" alt="">
-            <img src="../img/bibliotecom.png" alt="">
-            <img src="../img/bibliotecom.png" alt="">
+            <img src="../img/HTTMMLL.png" alt="">
+            <img src="../img/CSS1.png" alt="">
+            <img src="../img/BBS.png" alt="">
+            <img src="../img/JS.png" alt="">
+            <img src="../img/ps.png" alt="">
+            <img src="../img/ai.png" alt="">
         </div>
     </main>
     <footer class=" text-dark pt-1 pb-1">

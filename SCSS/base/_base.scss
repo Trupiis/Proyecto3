@@ -53,6 +53,38 @@
             box-shadow: $shadow;
         }
     }
-    
+}
 
+main .habilidades h2 {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 0 0 5px black;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    font-weight: 700;
+}
+
+main .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(220px, 1fr));
+    gap: 16px;
+    margin: 0 auto;
+}
+
+main .galeria img {
+    width: 220px;
+    height: auto;
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    transition: 2s;
+}
+
+main .galeria img:hover {
+    transform: scale(1.2);
+    background-color: aqua;
 }

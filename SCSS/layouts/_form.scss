@@ -1,42 +1,48 @@
-.container{
-    h2{
-        color: $text-color !important;
-    }
-}
-
 @media (min-width:768px) {
-    .form-container{
+    .form-container {
         display: flex;
         justify-content: center;
     }
-    form{
+
+    form {
         width: 678px;
         margin-right: 50px;
         margin-left: 50px;
         margin-top: 10px;
-        }
+    }
 }
 
-.form-container{
-    form{
+.form-container {
+    h2 {
+        color: $text-color !important;
+        font-size: $h2-fontsize;
+        text-transform: $mayus;
+    }
+
+    form {
         margin: 50px;
         border-radius: 10px;
         box-shadow: $shadow;
-        .labels{
+
+        .labels {
             padding: 20px;
+            font-size: 15px;
         }
-        label{
+
+        label {
             color: $text-color;
             margin-bottom: 30px;
         }
-        input{
+
+        input {
             color: $text-color !important;
             outline: none !important;
             background: inherit !important;
             border: none !important;
             border-bottom: 1px solid red !important;
         }
-        textarea{
+
+        textarea {
             color: $text-color !important;
             outline: none !important;
             background: inherit !important;
@@ -44,27 +50,41 @@
             border-bottom: 1px solid red !important;
             resize: none;
         }
-        button{
-            margin-top:20px;
-            margin-bottom:20px;
-            margin-left:20px !important;
-            margin-right:20px !important;
+        
+        .btn-grad {
+            background-image: linear-gradient(to right, #c51d18 0%, #b31217 51%, #e52d27 100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            border-radius: 10px;
+            display: block;
         }
-        #name::placeholder{
-            color: $text-color;
-            
+
+        .btn-grad:hover {
+            background-position: right center;
+            /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
         }
-        #phone::placeholder{
+
+        #name::placeholder {
             color: $text-color;
         }
-        #email::placeholder{
+
+        #phone::placeholder {
             color: $text-color;
         }
-        #mensaje::placeholder{
+
+        #email::placeholder {
             color: $text-color;
-            bottom: 0;
+        }
+
+        #mensaje::placeholder {
+            color: $text-color;
         }
     }
 }
-
-

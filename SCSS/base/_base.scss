@@ -26,17 +26,19 @@
 .CV {
     margin-top: 200px;
     text-align: center;
+
     h2 {
         color: $text-color;
         margin-top: 100px;
         font-size: $h2-fontsize;
         text-align: center;
     }
-    a{
+
+    a {
         text-decoration: none;
     }
 
-    .card{
+    .card {
         margin-top: 50px;
         width: 680px;
         height: 1280px;
@@ -44,7 +46,7 @@
         display: inline-block;
         box-shadow: $shadow;
 
-        img{
+        img {
             width: 600px;
             height: 1200px;
             display: block;
@@ -55,36 +57,38 @@
     }
 }
 
-main .habilidades h2 {
-    color: #fff;
-    font-size: 30px;
-    text-shadow: 0 0 5px black;
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-    font-weight: 700;
-}
 
-main .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,
-            minmax(220px, 1fr));
-    gap: 16px;
-    margin: 0 auto;
-}
-
-main .galeria img {
-    width: 220px;
-    height: auto;
-    background-color: rgb(241, 241, 241);
-    padding: 20px;
-    margin: 30px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
-    transition: 2s;
-}
-
-main .galeria img:hover {
-    transform: scale(1.2);
-    background-color: aqua;
+main {
+    h2 {
+        color: $text-color;
+        font-size: $h2-fontsize;
+        text-shadow: $shadow;
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+        font-weight: 700;
+        margin-top: 50px;
+    }
+    .galeria {
+        margin-top: 200px !important;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,
+                minmax(220px, 1fr));
+        gap: 16px;
+        margin: 30px;
+        justify-items: center;
+        img {
+            width: 220px;
+            height: auto;
+            background-color: rgb(170, 170, 170);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: $shadow;
+            transition: 2s;
+        }
+        img:hover {
+            transform: scale(1.2);
+            background-color: aqua;
+        }
+    }
 }

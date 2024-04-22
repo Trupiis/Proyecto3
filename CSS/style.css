@@ -27,7 +27,7 @@
 .CV h2 {
   color: #fff;
   margin-top: 100px;
-  font-size: 45px;
+  font-size: 35px;
   text-align: center;
 }
 .CV a {
@@ -50,34 +50,33 @@
   box-shadow: 0 0 20px black;
 }
 
-main .habilidades h2 {
+main h2 {
   color: #fff;
-  font-size: 30px;
-  text-shadow: 0 0 5px black;
+  font-size: 35px;
+  text-shadow: 0 0 20px black;
   display: flex;
   justify-content: center;
   margin: 50px;
   font-weight: 700;
+  margin-top: 50px;
 }
-
 main .galeria {
+  margin-top: 200px !important;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
-  margin: 0 auto;
+  margin: 30px;
+  justify-items: center;
 }
-
 main .galeria img {
   width: 220px;
   height: auto;
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(170, 170, 170);
   padding: 20px;
-  margin: 30px auto;
   border-radius: 10px;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 20px black;
   transition: 2s;
 }
-
 main .galeria img:hover {
   transform: scale(1.2);
   background-color: aqua;
@@ -156,12 +155,22 @@ footer .container-fluid .redes .lista-redes {
 footer a {
   margin-right: 20px;
 }
-footer h4, footer hr, footer p, footer li {
+footer h4,
+footer hr,
+footer p,
+footer li {
   color: #fff;
 }
-
-.container h2 {
-  color: #fff !important;
+footer .Contactame .info-footer {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+footer .Contactame .info-footer li {
+  list-style: none;
+}
+footer .Contactame .info-footer span {
+  margin-left: 10px;
 }
 
 @media (min-width: 768px) {
@@ -176,6 +185,11 @@ footer h4, footer hr, footer p, footer li {
     margin-top: 10px;
   }
 }
+.form-container h2 {
+  color: #fff !important;
+  font-size: 35px;
+  text-transform: uppercase;
+}
 .form-container form {
   margin: 50px;
   border-radius: 10px;
@@ -183,6 +197,7 @@ footer h4, footer hr, footer p, footer li {
 }
 .form-container form .labels {
   padding: 20px;
+  font-size: 15px;
 }
 .form-container form label {
   color: #fff;
@@ -203,11 +218,23 @@ footer h4, footer hr, footer p, footer li {
   border-bottom: 1px solid red !important;
   resize: none;
 }
-.form-container form button {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px !important;
-  margin-right: 20px !important;
+.form-container form .btn-grad {
+  background-image: linear-gradient(to right, #c51d18 0%, #b31217 51%, #e52d27 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+}
+.form-container form .btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 .form-container form #name::placeholder {
   color: #fff;
@@ -220,7 +247,6 @@ footer h4, footer hr, footer p, footer li {
 }
 .form-container form #mensaje::placeholder {
   color: #fff;
-  bottom: 0;
 }
 
 html {

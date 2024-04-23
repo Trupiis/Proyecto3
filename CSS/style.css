@@ -20,6 +20,11 @@
   margin-top: 100px;
 }
 
+@media (max-width: 420px) {
+  .info .foto img {
+    height: 270px !important;
+  }
+}
 .CV {
   margin-top: 200px;
   text-align: center;
@@ -50,6 +55,16 @@
   box-shadow: 0 0 20px black;
 }
 
+@media (max-width: 765px) {
+  .CV {
+    /* img{
+        visibility: hidden;
+    } */
+  }
+  .CV .card, .CV img {
+    visibility: hidden;
+  }
+}
 main h2 {
   color: #fff;
   font-size: 35px;
@@ -60,13 +75,14 @@ main h2 {
   font-weight: 700;
   margin-top: 50px;
 }
-main .galeria {
-  margin-top: 100px !important;
+main .galeria { /* 
+margin-top: 100px !important; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 16px;
-  margin: 30px;
+  margin: 0 auto;
   justify-items: center;
+  max-width: 1000px !important;
 }
 main .galeria img {
   width: 300px;
@@ -83,6 +99,7 @@ main .galeria img:hover {
 }
 main h3 {
   color: #fff;
+  text-shadow: 0 0 20px black;
   text-align: center;
   text-transform: uppercase;
   font-size: 35px;
@@ -95,6 +112,7 @@ main h3 {
 }
 .proyectos h2 {
   text-transform: uppercase;
+  text-shadow: 0 0 20px black;
   font-size: 35px;
   color: #fff;
   font-weight: 700;
@@ -136,6 +154,10 @@ main h3 {
   display: block;
 }
 
+.navbar {
+  box-shadow: 0 0 20px black;
+}
+
 nav .nav-items {
   margin-right: 10px;
 }
@@ -167,6 +189,7 @@ nav .navbar-brand {
   }
 }
 footer {
+  box-shadow: 0 0 20px black;
   position: absolute !important;
   bottom: 0 !important;
   width: 100%;

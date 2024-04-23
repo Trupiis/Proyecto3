@@ -23,6 +23,14 @@
     }
 }
 
+@media (max-width: 420px) {
+    .info{
+        .foto img{
+            height: 270px !important;
+        }
+    }
+}
+
 .CV {
     margin-top: 200px;
     text-align: center;
@@ -57,6 +65,16 @@
     }
 }
 
+@media (max-width: 765px) {
+    .CV{
+        .card, img{
+            visibility: hidden;
+        }
+        /* img{
+            visibility: hidden;
+        } */
+    }
+}
 
 main {
     h2 {
@@ -70,14 +88,15 @@ main {
         margin-top: 50px;
     }
 
-    .galeria {
-        margin-top: 100px !important;
+    .galeria {/* 
+        margin-top: 100px !important; */
         display: grid;
         grid-template-columns: repeat(auto-fit,
                 minmax(300px, 1fr));
         gap: 16px;
-        margin: 30px;
+        margin: 0 auto;
         justify-items: center;
+        max-width: 1000px !important;
 
         img {
             width: 300px;
@@ -97,6 +116,7 @@ main {
     }
     h3{
         color: $text-color;
+        text-shadow: $shadow;
         text-align: center;
         text-transform: $mayus;
         font-size: $h2-fontsize;
@@ -109,6 +129,7 @@ main {
     text-align: center;
     h2{
         text-transform: $mayus;
+        text-shadow: $shadow;
         font-size: $h2-fontsize;
         color: $text-color;
         font-weight: $bold;

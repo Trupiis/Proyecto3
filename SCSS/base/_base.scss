@@ -69,26 +69,57 @@ main {
         font-weight: 700;
         margin-top: 50px;
     }
+
     .galeria {
-        margin-top: 200px !important;
+        margin-top: 100px !important;
         display: grid;
         grid-template-columns: repeat(auto-fit,
-                minmax(220px, 1fr));
+                minmax(300px, 1fr));
         gap: 16px;
         margin: 30px;
         justify-items: center;
+
         img {
-            width: 220px;
-            height: auto;
+            width: 300px;
+            height: 300px;
             background-color: rgb(170, 170, 170);
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 15px;
             box-shadow: $shadow;
-            transition: 2s;
+            transition: 0.5s;
         }
+
         img:hover {
             transform: scale(1.2);
-            background-color: aqua;
+            background-color: rgb(24, 6, 18);
+
         }
+    }
+    h3{
+        color: $text-color;
+        text-align: center;
+        text-transform: $mayus;
+        font-size: $h2-fontsize;
+        margin-top: 200px;
+        font-weight: $bold;
+    }
+}
+
+.proyectos{
+    text-align: center;
+    h2{
+        text-transform: $mayus;
+        font-size: $h2-fontsize;
+        color: $text-color;
+        font-weight: $bold;
+        margin-top: 50px;
+    }
+
+    .p-1 iframe{
+        margin-top: 30px;
+        width: 100%;
+        max-width: 800px;
+        height: 700px;
+        
     }
 }

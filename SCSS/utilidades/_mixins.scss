@@ -1,0 +1,27 @@
+@mixin hab( $grid , $template , $gap , $centro , $max){
+    display: $grid;
+    grid-template-columns: $template;
+    gap: $gap;
+    margin: $centro;
+    max-width: $max;
+}
+
+@mixin BG ($bg1 , $bg2 , $bg3 , $shadow2 , $centro , $mb , $mt){
+    background: $bg1;
+    background: $bg2;
+    background: $bg3;
+    box-shadow: $shadow2;
+    margin: $centro;
+    margin-bottom: $mb;
+    margin-top: $mt;
+}
+
+@mixin H2 ($mt,$text-color,$h2-fontsize,$bold,$shadow,$tcenter){
+    margin-top: $mt;
+    color: $text-color;
+    font-size: $h2-fontsize;
+    font-weight: $bold;
+    text-shadow: $shadow;
+    text-align: $tcenter;
+}
+    

@@ -176,6 +176,7 @@
         justify-items: center;
         min-width: 300px !important;
         max-width: 800px;
+
         img{
             margin-top: 40px;
             margin-left: 10px;
@@ -188,11 +189,13 @@
             box-shadow: $shadow2;
             transition: 0.6s;
         }
+
+        }
         img:hover {
             transform: scale(1.2);
             background-color: $color-hov-hab;
         }
-        }
+        
     }
 
 @media (max-width:480px){
@@ -267,34 +270,64 @@
     
 }
 
-/* .project{
+.project{
     h2{
         @include H2 ($mt,$text-color,$h2-fontsize,$bold,$shadow,$tcenter);
-    }
-
-    .proyectos{
-        display: grid;
-        margin: 100px;
-        height: 500px;
-        grid-template-columns: repeat(auto-fit,
-                    minmax(900px, 1fr));
-        color: $text-color;
-        text-align: center;
-        
-        img{
-            border-radius: 15px;
-            width: 700px;
-            height: 400px;
-            margin: 0 200px;
+        margin-bottom: 50px;
+    }   
+    .container{
+        .row{
+            margin-bottom: 100px;
         }
-
-        .info-proyectos{
+        .foto-2{
+            width: 530px;
+        }
+        .foto-2 img{
+            width: 500px;
+            border-radius: 20px;
+        }
+        .texto-2{
+            margin-bottom: 70px;
             strong{
-                font-size: 40px;
-            }
-            p{
-                font-size: 20px;
+                font-size: $h2-fontsize;
             }
         }
     }
-} */
+}
+@media (max-width:1199px){
+    .project{
+        .container{
+            text-align: left;
+            .row{
+                width: 550px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+@media (max-width:576px){
+    .project{
+        .container{
+            text-align: left;
+            .row{
+                width: 90%;
+                margin: 0;
+                justify-content: center;
+            }
+            .foto-2{
+                width: 300px;
+            }
+            .foto-2 img{
+                width: 270px;
+                border-radius: 20px;
+            }
+            .texto-2{
+                margin-bottom: 70px;
+                width: 300px;
+                strong{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

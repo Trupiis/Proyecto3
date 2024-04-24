@@ -4,36 +4,61 @@ footer {
     bottom: 0 !important;
     width: 100%;
     background-color: $color1 !important;
+
     .container-fluid .redes .lista-redes {
         display: flex;
         justify-content: center;
         line-height: 100px;
     }
+
     a {
         margin-right: 20px;
     }
-    h4,
+
+    h4 {
+        font-size: 25px;
+        color: $text-color;
+    }
+
     hr,
     p,
     li {
-        color: $text-color;     
+        color: $text-color;
+        font-size: 18px;
     }
+
+    @media (max-width:480px) {
+        footer {
+            .Contactame{
+                .info-footer{
+                    p,li {
+                        color: $text-color;
+                        font-size: 100px;
+                    }
+                }  
+            }
+        }
+    }
+
     .Contactame .info-footer {
         display: flex;
         flex-direction: column;
         text-align: start;
-        li{
+
+        li {
             list-style: none;
         }
-        span{
+
+        span {
             margin-left: 10px;
         }
     }
-    .redes{
-        .fona:hover{
+
+    .redes {
+        .fona:hover {
             color: $color-hov;
             transition: 0.5s;
         }
-        
+
     }
 }

@@ -8,6 +8,8 @@ $max: 1000px !important;
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 .info .foto {
   height: 500px;
+  margin-top: 100px;
+  text-align: end;
 }
 .info .foto img {
   height: 80%;
@@ -19,55 +21,36 @@ $max: 1000px !important;
   font-size: 20px;
   list-style: none;
   text-align: start;
-  line-height: 100px;
-  margin-top: 50px;
-  padding: 0;
+  margin-top: 180px;
+  line-height: 80px;
   display: inline-block;
-  justify-content: center !important;
   color: #fff;
 }
 .info .container {
   margin-top: 100px;
 }
 
+@media (max-width: 992px) {
+  .info .foto {
+    text-align: center;
+    margin-top: 30px;
+    height: 410px;
+  }
+  .info .datos {
+    margin-top: 10px;
+  }
+}
 @media (max-width: 420px) {
+  .info .foto {
+    height: 300px;
+  }
   .info .foto img {
     height: 270px !important;
   }
+  .info .datos {
+    font-size: 14px;
+  }
 }
-/* .CV {
-    margin-top: 200px;
-    text-align: center;
-
-    h2 {
-        color: $text-color;
-        margin-top: 100px;
-        font-size: $h2-fontsize;
-        text-align: center;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .card {
-        margin-top: 50px;
-        width: 680px;
-        height: 1280px;
-        background-color: gray;
-        display: inline-block;
-        box-shadow: $shadow;
-
-        img {
-            width: 600px;
-            height: 1200px;
-            display: block;
-            border-radius: 10px;
-            margin: 40px auto;
-            box-shadow: $shadow;
-        }
-    }
-} */
 /* index */
 .s-mi h2 {
   margin-top: 100px;
@@ -86,10 +69,27 @@ $max: 1000px !important;
   margin-bottom: 100px;
   margin-top: 100px;
   display: flex;
-  width: 50%;
+  width: 60%;
   border-radius: 30px 30px 0px 30px;
 }
 
+@media (max-width: 768px) {
+  .container-relleno-3 {
+    width: 80%;
+  }
+  .container-relleno-3 .textos-relleno h3 {
+    font-size: 25px !important;
+  }
+  .container-relleno-3 .textos-relleno p {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 480px) {
+  .s-mi .container-relleno-3 {
+    width: 80%;
+  }
+}
+/* index cards */
 .container-relleno {
   background: #3c2258;
   background: -webkit-linear-gradient(to right, #32295a, #1e0743);
@@ -99,7 +99,7 @@ $max: 1000px !important;
   margin-bottom: 100px;
   margin-top: 100px;
   display: flex;
-  width: 50%;
+  width: 60%;
   border-radius: 30px 30px 0px 30px;
 }
 
@@ -112,14 +112,14 @@ $max: 1000px !important;
   margin-bottom: 100px;
   margin-top: 100px;
   display: flex;
-  width: 50%;
+  width: 60%;
   border-radius: 30px 30px 30px 0px;
 }
 
 .textos-relleno {
   color: #fff;
   font-size: 25px;
-  padding: 20px;
+  padding: 10px;
 }
 .textos-relleno h3 {
   text-align: center;
@@ -127,27 +127,34 @@ $max: 1000px !important;
 }
 .textos-relleno p {
   text-align: start;
-  margin: 20px;
+  margin: 10px;
 }
 
 @media (max-width: 768px) {
   .container-relleno {
-    width: 90%;
+    background: #3c2258;
+    background: -webkit-linear-gradient(to right, #32295a, #1e0743);
+    background: linear-gradient(to right, #32295a, #1e0743);
+    box-shadow: 13px 13px 40px #0d0a23, -13px -13px 40px #110e2f;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    width: 80%;
   }
   .container-relleno .textos-relleno h3 {
     font-size: 25px !important;
   }
   .container-relleno .textos-relleno p {
-    font-size: 15px !important;
+    font-size: 16px !important;
   }
   .container-relleno-2 {
-    width: 90%;
+    width: 80%;
   }
   .container-relleno-2 .textos-relleno h3 {
     font-size: 25px !important;
   }
   .container-relleno-2 .textos-relleno p {
-    font-size: 20px !important;
+    font-size: 16px !important;
   }
 }
 .grilla h2 {
@@ -275,24 +282,37 @@ $max: 1000px !important;
     width: 250px;
   }
 }
-.proyectos {
-  text-align: center;
-}
-.proyectos h2 {
-  margin-top: 100px;
-  color: #fff;
-  font-size: 35px;
-  font-weight: 700;
-  text-shadow: 0 0 20px black;
-  text-align: center;
-}
-.proyectos .p-1 iframe {
-  margin-top: 30px;
-  width: 100%;
-  max-width: 800px;
-  height: 700px;
-}
+/* .project{
+    h2{
+        @include H2 ($mt,$text-color,$h2-fontsize,$bold,$shadow,$tcenter);
+    }
 
+    .proyectos{
+        display: grid;
+        margin: 100px;
+        height: 500px;
+        grid-template-columns: repeat(auto-fit,
+                    minmax(900px, 1fr));
+        color: $text-color;
+        text-align: center;
+
+        img{
+            border-radius: 15px;
+            width: 700px;
+            height: 400px;
+            margin: 0 200px;
+        }
+
+        .info-proyectos{
+            strong{
+                font-size: 40px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+} */
 * {
   margin: 0;
   padding: 0;

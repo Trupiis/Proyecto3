@@ -15,6 +15,24 @@
     margin-bottom: $mb;
     margin-top: $mt;
 }
+@mixin BG1 ($bg1 , $bg2 , $bg3 , $shadow2 , $ml , $mb , $mt){
+    background: $bg1;
+    background: $bg2;
+    background: $bg3;
+    box-shadow: $shadow2;
+    margin-left: $ml;
+    margin-bottom: $mb;
+    margin-top: $mt;
+}
+@mixin BG2 ($bg1 , $bg2 , $bg3 , $shadow2 , $mr , $mb , $mt){
+    background: $bg1;
+    background: $bg2;
+    background: $bg3;
+    box-shadow: $shadow2;
+    margin-right: $mr;
+    margin-bottom: $mb;
+    margin-top: $mt;
+}
 
 @mixin H2 ($mt,$text-color,$h2-fontsize,$bold,$shadow,$tcenter){
     margin-top: $mt;

@@ -24,7 +24,7 @@ body {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: 0;
     position: relative;
-    padding-bottom: 340px;
+    padding-bottom: 370px;
 }
 
 @media (min-width:991px) {
@@ -38,13 +38,18 @@ body {
         padding-bottom: 600px;
     }
 }
+@media (max-width:768px) {
+    body{
+        padding-bottom: 650px;
+    }
+}
 @media (max-width:576px) {
     body{
-        padding-bottom: 730px;
+        padding-bottom: 800px;
     }
 }
 @media (min-width:320px) and (max-width:377px) {
     body{
-        padding-bottom: 840px;
+        padding-bottom: 930px;
     }
 }
